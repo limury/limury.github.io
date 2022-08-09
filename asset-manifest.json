@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.2ddc2327.js",
+    "static/js/787.7e1a6e52.chunk.js": "/static/js/787.7e1a6e52.chunk.js",
+    "static/media/profile.jpg": "/static/media/profile.bbb00960682125f27f23.jpg",
+    "static/media/Lorenzo_Bernasconi_08-08-2022_Resume.pdf": "/static/media/Lorenzo_Bernasconi_08-08-2022_Resume.64d763602ed4b1424ed3.pdf",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.2ddc2327.js.map": "/static/js/main.2ddc2327.js.map",
+    "787.7e1a6e52.chunk.js.map": "/static/js/787.7e1a6e52.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.2ddc2327.js"
+  ]
+}
