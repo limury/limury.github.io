@@ -36,11 +36,13 @@ export default function DrawerBar(props) {
             </ListItem>
           </Link>
           {/* Contact button */}
-          <ListItem disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={'Contact'} />
-            </ListItemButton>
-          </ListItem>
+          <Link to='/contact' style={{textDecoration: 'inherit', color:'inherit'}}>
+            <ListItem disablePadding>
+              <ListItemButton sx={{ textAlign: 'center' }}>
+                <ListItemText primary={'Contact'} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
       </List>
     </Box>
   );
@@ -83,9 +85,11 @@ export default function DrawerBar(props) {
                         CV
                       </Button>
                     </Link>
-                    <Button sx={{ color: 'text.primary' }}>
-                      Contact
-                    </Button>
+                    <Link to='/contact' style={{textDecoration: 'inherit', color:'inherit'}}>
+                      <Button sx={{ color: 'text.primary' }}>
+                        Contact
+                      </Button>
+                    </Link>
                 </Box>
               </Grid>
             </Grid>

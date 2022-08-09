@@ -29,7 +29,7 @@ function Profile() {
           <Box sx={{display:'flex',flexDirection:'row', alignItems:'center', mb: 1}}>
             <span role="img" aria-label="university">🎓</span>
             <Typography ml={1}>
-              I studied Electronic Engineering and Computer Science at Imperial College London.
+              I have a Master's in Electronics and Computer Science from Imperial College London.
             </Typography>
           </Box>
           {/* Specialize */}
