@@ -26,9 +26,11 @@ function Contact() {
         </Grid>
         <Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} />
         <Grid item xs={6} sx={{pl: 3}}>
-          <Typography>
-            lorenzo.j.bernasconi@gmail.com
-          </Typography>
+          <Link href="mailto:lorenzo.j.bernasconi@gmail.com" color='inherit'>
+            <Typography>
+              lorenzo.j.bernasconi@gmail.com
+            </Typography>
+          </Link>
         </Grid>
 
         <Grid item xs={6} sx={{display:'flex',flexDirection:'row', alignItems:'center', mb: 1, pr: 3, justifyContent: 'end'}}>
@@ -39,9 +41,11 @@ function Contact() {
         </Grid>
         <Divider orientation="vertical" flexItem style={{marginRight:"-1px"}} />
         <Grid item xs={6} sx={{pl: 3}}>
-          <Typography>
-            +44 7464261168
-          </Typography>
+          <Link href="tel:+44-7464261168" color='inherit'>
+            <Typography>
+              +44 7464261168
+            </Typography>
+          </Link>
         </Grid>
 
         <Grid item xs={6} sx={{display:'flex',flexDirection:'row', alignItems:'center', mb: 1, pr: 3, justifyContent: 'end'}}>
@@ -84,9 +88,11 @@ function Contact() {
               Email
             </Typography>
           </Box>
-          <Typography>
-            lorenzo.j.bernasconi@gmail.com
-          </Typography>
+          <Link href="mailto:lorenzo.j.bernasconi@gmail.com" color='inherit'>
+            <Typography>
+              lorenzo.j.bernasconi@gmail.com
+            </Typography>
+          </Link>
         </Box>
          
         <Box sx={{display:'flex', alignItems: 'center', flexDirection: 'column', mb: 2}}>
@@ -96,9 +102,11 @@ function Contact() {
               Phone
             </Typography>
           </Box>
-          <Typography>
-            +44 7464261168
-          </Typography>
+          <Link href="tel:+44-7464261168" color='inherit'>
+            <Typography>
+              +44 7464261168
+            </Typography>
+          </Link>
         </Box>
 
         <Box sx={{display:'flex', alignItems: 'center', flexDirection: 'column', mb: 2}}>
@@ -115,15 +123,13 @@ function Contact() {
         <Box sx={{display:'flex', alignItems: 'center', flexDirection: 'column', mb: 2}}>
             <Box sx={{display:'flex', flexDirection: 'row'}}>
               <span role="img" aria-label="github">🚀</span>
-              <Link href="https://www.linkedin.com/in/lorenzo-bernasconi-552983197/" color='inherit' sx={{ml:1}}>
+              <Link href="https://github.com/limury" color='inherit'>
                 <Typography>
                   GitHub
                 </Typography>
               </Link>
             </Box>
         </Box>
-        
-
       </Box>
 
     </Paper>
