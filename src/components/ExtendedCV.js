@@ -43,6 +43,43 @@ function ExtendedCV() {
         Work Experience 
       </Typography>
       <ExperienceCard
+          company="Imperial College Adaptive and Intelligent Robotics Lab" 
+          date="January 2020 - July 2022"
+          title="Undergraduate/Visiting Researcher"
+          location="London, UK">
+            <List sx={{ listStyleType: 'disc', ml: 2}}>
+              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
+                <Typography>
+                  Was selected amongst 100+ students to receive the "Faculty of Engineering Bursary" from Imperial College to
+                  pursue a 3-month research project in this lab.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
+                <Typography>
+                  Co-authored a research paper at a major academic conference for robotics and machine learning (IEEE ICRA)
+                  for which I implemented experiments in <strong>Python</strong> involving parallelized algorithms and robotics simulations.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
+                <Typography>
+                  Proposed a modification to the <a href="https://arxiv.org/pdf/2106.05648.pdf">AURORA algorithm</a>, 
+                  netting a 40% increase in performance across various
+                  metrics. Implemented in <strong>Python</strong> for validation and later in <strong>C++</strong> for efficiency. 
+                  Currently writing a conference
+                  paper as first author about this new approach.
+                </Typography>
+              </ListItem>
+              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
+                <Typography>
+                  Used <strong>Docker</strong> to create containerized versions of experiments, netting a ∼1000% average speed increase when
+                  being run on the Imperial College High-Performance Computing Cluster using the <strong>Linux Cluster PBS System</strong> over
+                   when being run on lab machines.
+                </Typography>
+              </ListItem>
+            </List>
+      </ExperienceCard>
+      <Box height={10}/>
+      <ExperienceCard
           company="Xapien - Automated Research" 
           date="March 2021 - September 2021"
           title="Machine Learning Engineer"
@@ -69,37 +106,6 @@ function ExtendedCV() {
                 <Typography>
                   Used <strong>Docker</strong> to create containerized versions of experiments, netting a ∼1000% average speed increase when
                   being run on the Imperial College High-Performance Computing Cluster over when being run on lab machines.
-                </Typography>
-              </ListItem>
-            </List>
-      </ExperienceCard>
-      <Box height={10}/>
-      <ExperienceCard
-          company="Imperial College Adaptive and Intelligent Robotics Lab" 
-          date="January 2020 - July 2022"
-          title="Undergraduate/Visiting Researcher"
-          location="London, UK">
-            <List sx={{ listStyleType: 'disc', ml: 2}}>
-              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
-                <Typography>
-                  Co-authored a research paper at a major academic conference for robotics and machine learning (IEEE ICRA)
-                  for which I implemented experiments in <strong>Python</strong> involving parallelized algorithms and robotics simulations.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
-                <Typography>
-                  Proposed a modification to the <a href="https://arxiv.org/pdf/2106.05648.pdf">AURORA algorithm</a>, 
-                  netting a 40% increase in performance across various
-                  metrics. Implemented in <strong>Python</strong> for validation and later in <strong>C++</strong> for efficiency. 
-                  Currently writing a conference
-                  paper as first author about this new approach.
-                </Typography>
-              </ListItem>
-              <ListItem sx={{display:'list-item'}} disableGutters={true} disablePadding={true}>
-                <Typography>
-                  Used <strong>Docker</strong> to create containerized versions of experiments, netting a ∼1000% average speed increase when
-                  being run on the Imperial College High-Performance Computing Cluster using the <strong>Linux Cluster PBS System</strong> over
-                   when being run on lab machines.
                 </Typography>
               </ListItem>
             </List>
@@ -166,6 +172,24 @@ function ExtendedCV() {
               </ListItem>
             </List>
       </ExperienceCard>
+      
+      {/* Skills */}
+      <Typography variant="h4" align='start' sx={{mb:2, ml:-1, mt:5}}>
+        Skills
+      </Typography>
+      <Paper elevation={3} sx={{ width: '100%', padding: 3, alignSelf: 'center', flexGrow: 1, display:'flex', flexDirection: 'column'}}>
+        <Typography fontSize={20} marginBottom={2}>
+          Programming:
+        </Typography>
+        <Grid container>
+          <Grid item xs={3}> <Typography align='center'><strong>Python</strong></Typography> </Grid>
+          <Grid item xs={3}> <Typography align='center'><strong>C++</strong></Typography>    </Grid>
+          <Grid item xs={3}> <Typography align='center'><strong>C</strong></Typography>      </Grid>
+          <Grid item xs={3}> <Typography align='center'><strong>JavaScript</strong></Typography>      </Grid>
+        </Grid>
+      </Paper>
+
+
       <Box height={40}/>
     </Container>
   )
