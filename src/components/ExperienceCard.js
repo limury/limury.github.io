@@ -11,25 +11,25 @@ import React from 'react'
 // }
 function ExperienceCard(props) {
   return (
-      <Paper elevation={3} sx={{width: '100%', padding: 3, alignSelf: 'center', flexGrow: 1, display:'flex', flexDirection: 'column'}}>
+      <Paper elevation={3} sx={{ width: '100%', padding: 3, alignSelf: 'center', flexGrow: 1, display:'flex', flexDirection: 'column'}}>
         <Grid container>
-          <Grid item xs={6} sx={{display:'flex', flexDirection:'row', justifyContent: 'start'}}>
-            <Typography sx={{fontWeight: 'bold'}}>
+          <Grid item xs={8} sx={{display:'flex', flexDirection:'row', justifyContent: 'start'}}>
+            <Typography sx={{fontWeight: 'bold'}} variant='h6'>
               {props.company}
             </Typography>
           </Grid>
-          <Grid item xs={6} sx={{display:'flex', flexDirection:'row', justifyContent: 'end'}}>
+          <Grid item xs={4} sx={{display:'flex', flexDirection:'row', justifyContent: 'end'}}>
             <Typography>
               {props.date}
             </Typography>
           </Grid>
 
-          <Grid item xs={6} sx={{display:'flex', flexDirection:'row', justifyContent: 'start'}}>
+          <Grid item xs={8} sx={{display:'flex', flexDirection:'row', justifyContent: 'start'}}>
             <Typography sx={{fontStyle:'italic'}}>
               {props.title}
             </Typography>
           </Grid>
-          <Grid item xs={6} sx={{display:'flex', flexDirection:'row', justifyContent: 'end'}}>
+          <Grid item xs={4} sx={{display:'flex', flexDirection:'row', justifyContent: 'end'}}>
             <Typography>
               {props.location}
             </Typography>

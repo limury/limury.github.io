@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/system';
 import { useTheme, createTheme } from '@mui/material/styles';
 import Profile from './components/Profile';
-import Experience from './components/Experience';
+import ExtendedCV from './components/ExtendedCV';
 import DrawerBar from './components/DrawerBar';
 import Contact from './components/Contact';
 
@@ -15,6 +15,7 @@ const themeOptions = createTheme({
     type: 'light',
     primary: {
       main: '#ffffff',
+      // main: '#000000',
     },
     secondary: {
       main: '#1e88e5',
@@ -28,13 +29,19 @@ function App() {
       <Container sx={{height: '100vh', justifyContent: "center", alignItems: "center", display: 'flex', paddingX: {xs: 0, sm: '24px'}}}>
         <DrawerBar/>
 
-        <Box sx={{display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center'}}>
           <Routes>
-            <Route exact path="/" element={<Profile/>}></Route>
-            <Route path="/experience" element={<Experience/>}></Route>
+            <Route exact path="/" element={
+              <Box sx={{display: 'flex', flexGrow: 1, alignItems: 'center', justifyContent: 'center'}}>
+                <Profile/>
+              </Box>
+            }></Route>
+            <Route path="/extended-cv" element={
+              <Box sx={{display: 'flex', flexDirection: 'column', alignSelf: 'start'}}>
+                <ExtendedCV/>
+              </Box>
+            }></Route>
             <Route path="/contact" element={<Contact/>}></Route>
           </Routes>
-        </Box>
       </Container>
 
     </ThemeProvider>

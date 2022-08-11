@@ -20,10 +20,10 @@ export default function DrawerBar(props) {
       <Divider />
       <List>
           {/* Experience button */}
-          <Link to='/experience' style={{textDecoration: 'inherit', color:'inherit'}}>
+          <Link to='/extended-cv' style={{textDecoration: 'inherit', color:'inherit'}}>
             <ListItem disablePadding>
               <ListItemButton sx={{ textAlign: 'center' }}>
-                <ListItemText primary={'Experience'} />
+                <ListItemText primary={'Extended CV'} />
               </ListItemButton>
             </ListItem>
           </Link>
@@ -75,9 +75,9 @@ export default function DrawerBar(props) {
               </Grid>
               <Grid item xs={6}>
                 <Box sx={{ display: { xs: 'none', sm: 'flex' }, flexDirection: 'row', justifyContent:'center' }}>
-                    <Link to='/experience' style={{textDecoration: 'inherit', color:'inherit'}}>
+                    <Link to='/extended-cv' style={{textDecoration: 'inherit', color:'inherit'}}>
                       <Button sx={{ color: 'text.primary' }}>
-                        Experience
+                        Extended CV
                       </Button>
                     </Link>
                     <Link to={CV} target="_blank" download style={{textDecoration: 'inherit', color:'inherit'}}>
